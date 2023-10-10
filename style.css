@@ -5,5 +5,17 @@
 }
 
 body {
-  
+  background-color:#BFD7E4;
+}
+
+body::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 465px;
+  background-color:#293241;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
 }
