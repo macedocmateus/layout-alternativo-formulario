@@ -3,3 +3,86 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'poppins', sans-serif;
+  background-color: #BFD7E4;
+}
+
+body::after {
+  content: "";
+  width: 100%;
+  height: 465px;
+  background-color: #293241;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.layout-pagina {
+  width: 750px;
+  margin-inline: auto;
+}
+
+header {
+  text-align: center;
+  margin-top: 107px;
+}
+
+header h1 {
+  font-family: 'staatliches', sans-serif;
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+header p {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+header img {
+  margin: 13px 0 36px;
+}
+
+.form-title {
+  background-color: #F67669;
+  height: 133px;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-title h2 {
+  font-family: 'staatliches', sans-serif;
+  color: white;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+.meu-formulario {
+  min-height: 300px;
+  padding: 32px 64px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-family: 'staatliches', sans-serif;
+  color: #253b51;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+}
