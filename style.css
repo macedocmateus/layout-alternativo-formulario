@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: 'poppins', sans-serif;
-  background-color: #BFD7E4;
+  font-family: "poppins", sans-serif;
+  background-color: #bfd7e4;
 }
 
 body::after {
@@ -22,7 +22,7 @@ body::after {
 
 .layout-pagina {
   width: 750px;
-  margin-inline: auto;
+  margin: auto;
 }
 
 header {
@@ -31,7 +31,7 @@ header {
 }
 
 header h1 {
-  font-family: 'staatliches', sans-serif;
+  font-family: "staatliches", sans-serif;
   color: white;
   font-size: 36px;
   font-weight: 400;
@@ -50,7 +50,7 @@ header img {
 }
 
 .form-title {
-  background-color: #F67669;
+  background-color: #f67669;
   height: 133px;
   border-radius: 20px 20px 0 0;
   display: flex;
@@ -59,7 +59,7 @@ header img {
 }
 
 .form-title h2 {
-  font-family: 'staatliches', sans-serif;
+  font-family: "staatliches", sans-serif;
   color: white;
   font-size: 24px;
   line-height: 34px;
@@ -69,24 +69,25 @@ header img {
 .meu-formulario {
   min-height: 300px;
   padding: 32px 64px;
+  margin-bottom: 100px;
+  border-radius: 0 0 20px 20px;
   background-color: white;
   display: flex;
   flex-direction: column;
   gap: 36px;
 }
 
-
 fieldset {
   border: none;
 }
 
 legend {
-  font-family: 'staatliches', sans-serif;
+  font-family: "staatliches", sans-serif;
   color: #253b51;
   font-size: 24px;
   line-height: 34px;
   font-weight: 400;
-  border-bottom: 1px solid #E6E6F0;
+  border-bottom: 1px solid #e6e6f0;
   padding-bottom: 8px;
 }
 
@@ -97,13 +98,13 @@ legend {
 }
 
 .input-wrapper {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .col-2 {
-display: flex;
-gap: 22px;
+  display: flex;
+  gap: 22px;
 }
 
 .col-2 input {
@@ -111,10 +112,9 @@ gap: 22px;
   height: 56px;
   padding: 24px;
   border-radius: 8px;
-  border: 1px solid #E6E6F0;
+  border: 1px solid #e6e6f0;
   background-color: #fafafc;
   margin-top: 8px;
-  
 }
 
 .input-wrapper input {
@@ -122,17 +122,14 @@ gap: 22px;
   height: 56px;
   padding: 24px;
   border-radius: 8px;
-  border: 1px solid #E6E6F0;
+  border: 1px solid #e6e6f0;
   background-color: #fafafc;
   margin-top: 8px;
-  
 }
 
 .email input {
   width: 100%;
 }
-
-
 
 .input-wrapper label {
   font-size: 14px;
@@ -145,7 +142,7 @@ gap: 22px;
   font-size: 12px;
   line-height: 20px;
   font-weight: 400;
-  color: #C1BCCC;
+  color: #c1bccc;
 }
 
 .wrapper-mentor {
@@ -154,14 +151,12 @@ gap: 22px;
   gap: 32px;
 }
 
-
-
 .wrapper-mentor .input-wrapper select {
   width: 300px;
   height: 56px;
   padding-left: 24px;
   background-color: #fafafc;
-  border: 1px solid #E6E6F0;
+  border: 1px solid #e6e6f0;
   border-radius: 8px;
   margin-top: 8px;
 }
@@ -171,7 +166,96 @@ gap: 22px;
   height: 167px;
   padding: 12px 24px 0;
   background-color: #fafafc;
-  border: 1px solid #E6E6F0;
+  border: 1px solid #e6e6f0;
   border-radius: 8px;
   margin-top: 8px;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  text-align: center;
+  margin: 0;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #4e4958;
+}
+/*Criando uma checkbox personalizada*/
+.checkbox-wrapper label::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  margin: 0;
+}
+/*Colocando o input checkbox padrão do browser dentro do checkbox personalizado acima,
+resultado será a otimização da acessibilidade durante o preenchimento e click */
+.checkbox-wrapper input {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 50% top 50%;
+}
+
+.wrapper-agenda {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.col-3 {
+  display: flex;
+}
+
+.col-3 .input-wrapper:nth-child(2) {
+  margin-left: 32px;
+}
+
+.col-3 .input-wrapper:nth-child(3) {
+  margin-left: 10px;
+}
+.col-3 .input-wrapper:nth-child(2) input {
+  width: 140px;
+}
+
+.col-3 .input-wrapper:nth-child(3) input {
+  width: 140px;
+}
+
+.enviar {
+  margin: 64px 0;
+}
+
+.enviar input {
+  width: 622px;
+  height: 52px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f67669;
+  color: white;
+  font-family: "staatliches", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.enviar input:hover {
+  background-color: #d1665a;
+  cursor: pointer;
 }
