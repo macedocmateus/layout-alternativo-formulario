@@ -50,36 +50,37 @@
         </fieldset>
 
         <fieldset>
-          <legend>Informações do Mentor</legend>
-          <div class="linha"></div>
           <div class="wrapper-mentor">
+            <legend>Informações do Mentor</legend>
             <div class="input-wrapper">
               <label for="event-mentor">Selecione quem foi seu mentor</label>
               <select id="event-mentor">
+                <option value="" disabled selected>Selecione um mentor</option>
                 <option value="name">Alex</option>
                 <option value="name">Bruna</option>
                 <option value="name">Denise</option>
                 <option value="name">Sara</option>
                 <option value="name">Pedro</option>
               </select>
+            </div>
 
               <div class="input-wrapper">
                 <label for="textarea-mentor">Feedback sobre o mentor</label>
-                <textarea id="textarea-mentor"></textarea>
+                <textarea id="textarea-mentor" placeholder="Digite sua mensagem"></textarea>
               </div>
 
               <div class="input-wrapper">
                 <input type="checkbox" id="checkbox-mentor" />
                 <label for="checkbox-mentor">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
               </div>
-            </div>
+            
           </div>
         </fieldset>
 
         <fieldset>
-          <legend>Agendando Próxima Mentoria</legend>
-          <div class="linha"></div>
+          
           <div class="col-3">
+            <legend>Agendando Próxima Mentoria</legend>
             <div class="input-wrapper">
               <label for="event-data">Data <span>(DD/MM/AAAA)</span></label>
               <input type="date" id="event-data" />
